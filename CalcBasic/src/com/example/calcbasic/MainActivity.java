@@ -89,7 +89,6 @@ public class MainActivity extends Activity {
 
     public void onClickOp(View view) {
     	if (controller.isBinaryOperationReady()) {
-    		controller.execute();
     		resetAtNextInput.set();
     	}
     	enterLetter(((Button) view).getText().toString(), true);
@@ -108,7 +107,6 @@ public class MainActivity extends Activity {
     }
 
     public void onClickEq(View view) {
-    	controller.execute();
     	update(true);
     }
 }

@@ -1,7 +1,7 @@
 package com.example.calcbasic
 
 object ModelConfiguration {
-  val replaceOperatorIfDuplicated: Boolean = false
+  val replaceOperatorIfDuplicated: Boolean = true
 }
 
 class GrowingString {
@@ -22,6 +22,12 @@ class CalcModel {
   var status: engine.EStatus.Code = engine.EStatus.Incomplete
   var lastOp: String = ""
 
+  private def execute = {
+    val result: engine.Result = engine.apply(inputText)
+    value = result.evaluatedValue
+    status = result.status
+    lastOp = result.lastOperator
+  }
   def enter(key: String) = {
     inputs.concat(key)
     execute
@@ -33,12 +39,6 @@ class CalcModel {
         execute
       }
     }
-  }
-  def execute = {
-    val result: engine.Result = engine.apply(inputText)
-    value = result.evaluatedValue
-    status = result.status
-    lastOp = result.lastOperator
   }
   def clear = { inputs.clear; execute }
   def undo = { inputs.undo; execute }

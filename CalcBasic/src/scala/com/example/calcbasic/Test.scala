@@ -34,7 +34,9 @@ object Test {
     ctrlr.dump
     ctrlr.enter("/")
     ctrlr.dump
-    ctrlr.enter("113")
+    ctrlr.enter("0")
+    ctrlr.dump
+    ctrlr.enter(".113")
     ctrlr.dump
     ctrlr.clear
     ctrlr.enter("10-")

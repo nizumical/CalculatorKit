@@ -5,7 +5,6 @@ class CalcController {
   def enter(key: String) = model.enter(key)
   def undo = model.undo
   def clear = model.clear
-  def execute() = model.execute
   def getValueText = model.valueText
   def getValueTextValidAsInput = model.valueTextValidAsInput
   def getInputText = model.inputText

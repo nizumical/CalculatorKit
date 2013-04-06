@@ -73,7 +73,7 @@ class CalcEngine {
 
   private def arithmeticOp(op: String, num1: Double, num2: Double): (Double, EStatus.Code) = op match {
     // Error case
-    case "/" if (num2 == 0) => (num1, EStatus.Div0Error)
+    case "/" if (num2 == 0) => (num1, EStatus.Incomplete)  // just leave it as incomplete, not as Div0Error
     // Successful case
     case "-"     => (num1 - num2, EStatus.Ready)
     case "+"     => (num1 + num2, EStatus.Ready)
