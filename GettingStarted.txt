@@ -1,0 +1,18 @@
+Quick step to try sample:
+- Install pre-built apk in the repository to your android,
+- Or build with following steps.
+
+Qucik steps to build the sample:
+1. Setup scala
+2. Setup Android SDK
+3. Add plugin to Eclipse
+ Scala IDE Plugin
+ http://scala-ide.org/download/current.html
+ Android Proguard Scala
+ https://github.com/banshee/AndroidProguardScala
+4. Setup sbt
+ http://www.scala-sbt.org/
+5. Add folder CalcSimple to Eclipse
+6. Build and run CalcSimple
+
+
