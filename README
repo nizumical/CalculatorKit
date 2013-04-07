@@ -1,9 +1,0 @@
-Your software calculator construction kit
-
-This is construction kit for you to create your own wonderful calculator, for every different purpose like hexiadecimal, duodecimal calculation, counting score of game.
-
-This kit contains basic architecture of calculator with simple calculation engine and its UI as basic sample, which you can freely customize for your purpose!
-
-Programmed in scala, and the sample is in Java for Android.
-You can just replace development environment for your final target, like web application; it is designed to be easy to bring calculator body, just fit to your UI.
-You would also want to customize your calculation, you can simply add your functions to calculation engine.
