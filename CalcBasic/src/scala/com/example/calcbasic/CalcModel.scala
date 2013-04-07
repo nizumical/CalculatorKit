@@ -32,7 +32,7 @@ class CalcModel {
     inputs.concat(key)
     execute
     if (ModelConfiguration.replaceOperatorIfDuplicated) {
-      // Replace last operator if it is duplicated operator
+      // Replace last operator if it is duplicated
       if (status == engine.EStatus.DupOpError) {
         inputs.undo
         inputs.set(engine.dropLastOperator(inputText) + key)
